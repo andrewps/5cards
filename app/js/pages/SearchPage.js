@@ -1,8 +1,8 @@
 'use strict';
 
-import React            from 'react';
-import {Link}           from 'react-router';
-import DocumentTitle    from 'react-document-title';
+import React                       from 'react';
+import {Link}                      from 'react-router';
+import DocumentTitle               from 'react-document-title';
 
 const propTypes = {
   currentUser: React.PropTypes.object
@@ -32,17 +32,18 @@ class SearchPage extends React.Component {
         <section className="search-page">
 
           <div>
-            <h1>Search</h1>
+            <div className="wrap">
+              <h1>Search</h1>
 
-            <h2>Your query: <span ref="queryDisplay">{this.state.query}</span></h2>
+              <h2>Your query: <span ref="queryDisplay">{this.state.query}</span></h2>
 
-            <input type="text" onChange={this.handleQueryChange} ref="searchInput" />
+              <input type="text" onChange={this.handleQueryChange} ref="searchInput" />
+            </div>
+
+            <div>
+              <Link to="/">Back to Home</Link>
+            </div>
           </div>
-
-          <div>
-            <Link to="/">Back to Home</Link>
-          </div>
-
         </section>
       </DocumentTitle>
     );

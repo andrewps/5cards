@@ -8,6 +8,8 @@ import App                         from './App';
 import HomePage                    from './pages/HomePage';
 import SearchPage                  from './pages/SearchPage';
 import NotFoundPage                from './pages/NotFoundPage';
+import BuildCard                   from './pages/BuildCard';
+import ConfirmationPage            from './pages/ConfirmationPage';
 
 export default (
   <Router history={CreateBrowserHistory()}>
@@ -17,7 +19,8 @@ export default (
 
       <Route path="/" component={HomePage} />
       <Route path="/search" component={SearchPage} />
-
+      <Route path="/build-card" component={BuildCard} />
+      <Route path="/confirmation" component={ConfirmationPage} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>

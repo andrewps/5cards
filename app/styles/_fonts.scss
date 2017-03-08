@@ -1,0 +1,69 @@
+$serif: "Argent";
+$mono: "InputMonoNarrow";
+
+
+@font-face {
+  font-family: "Argent";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/argent/ArgentCF-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Argent";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/argent/ArgentCF-Bold.ttf") format("truetype");
+}
+//- Italic
+@font-face {
+  font-family: "Argent";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/argent/ArgentCF-RegularItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Argent";
+  font-style: italic;
+  font-weight: bold;
+  src: url("/fonts/argent/ArgentCF-BoldItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/input/InputMonoNarrow-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/input/InputMonoNarrow-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/input/InputMonoNarrow-Bold.ttf") format("truetype");
+}
+//- Italic
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/input/InputMonoNarrow-RegularItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/input/InputMonoNarrow-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "InputMonoNarrow";
+  font-style: italic;
+  font-weight: bold;
+  src: url("/fonts/input/InputMonoNarrow-BoldItalic.ttf") format("truetype");
+}

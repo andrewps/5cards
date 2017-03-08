@@ -1,6 +1,16 @@
+@import 'normalize';
 @import 'vars';
+@import 'grid';
+@import 'forms';
+@import 'fonts';
 @import 'typography';
+@import 'buttons';
+@import 'cards';
 @import 'base';
 
+// screens
+@import 'screens/home';
+
+// elements
 @import 'elements/header';
 @import 'elements/footer';

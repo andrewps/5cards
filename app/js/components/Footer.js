@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React                       from 'react';
 
 class Footer extends React.Component{
 
@@ -12,7 +12,10 @@ class Footer extends React.Component{
     return (
       <footer>
 
-        Footer
+        <hr/>
+        
+        <small>Copyright &copy; 2017 / <b>5Cards</b></small>
+
 
       </footer>
     );

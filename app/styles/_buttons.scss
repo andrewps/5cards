@@ -1,0 +1,60 @@
+$btn-height: 40px;
+$button-colors: (
+  btn-black $black white,
+  btn-teal $teal white,
+  btn-orange $orange white,
+  btn-twitter $twitter white,
+  btn-facebook $facebook white
+);
+.btn,
+a.btn,
+button.btn {
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 100px;
+  height: $btn-height;
+  line-height: $btn-height;
+  padding: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-appearance: none !important;
+  @each $color in $button-colors {
+    &.#{nth($color, 1)} {
+      background-color: #{nth($color, 2)};
+      color: #{nth($color, 3)};
+      &:hover {
+        background-color: darken(nth($color, 2), 5%);
+        box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.25);
+      }
+      &:active, &:focus {
+        background-color: darken(nth($color, 2), 8%);
+        outline: none !important;
+        box-shadow: none;
+      }
+      &[disabled] {
+        opacity: 1;
+        color: rgba(white, 0.5);
+        background-color: rgba(nth($color, 2), 0.25);
+      } 
+    }
+  }
+}
+
+// Button Sizes
+.btn {
+  &.btn-lg {
+    height: 80px;
+    line-height: 85px;
+    padding: 0 20px;
+    font-size: 20px;
+  }
+  &.btn-sm {
+    font-size: 10px;
+  }
+  &.btn-block {
+    width: 100%;
+  }
+}

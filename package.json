@@ -65,5 +65,8 @@
     "lint": "NODE_ENV=test ./node_modules/.bin/gulp lint",
     "test": "NODE_ENV=test ./node_modules/.bin/gulp test",
     "build": "NODE_ENV=production ./node_modules/.bin/gulp prod"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
   }
 }

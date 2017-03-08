@@ -1,8 +1,11 @@
 'use strict';
 
-import React         from 'react';
-import {Link}        from 'react-router';
-import DocumentTitle from 'react-document-title';
+import React                       from 'react';
+import {Link}                      from 'react-router';
+import DocumentTitle               from 'react-document-title';
+import BuildCard                   from './BuildCard';
+import CardThumbnail               from '../components/CardThumbnail';
+import WelcomeMessage              from '../components/WelcomeMessage';
 
 const propTypes = {
   currentUser: React.PropTypes.object
@@ -17,16 +20,58 @@ class HomePage extends React.Component {
   render() {
     return (
       <DocumentTitle title="Home">
-        <section className="home-page">
+        <section className="home">
 
-          <div>
-            Home
+          <div className="pagebreak--light">
+            <WelcomeMessage></WelcomeMessage>
           </div>
 
-          <div>
-            <Link to="/search">Search</Link>
+          <div className="wrap">
+            <div className="row">
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+              <div className="col-sm-4">
+                <CardThumbnail/>
+              </div>
+            </div>
           </div>
-
         </section>
       </DocumentTitle>
     );

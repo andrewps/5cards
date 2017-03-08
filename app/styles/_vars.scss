@@ -7,6 +7,19 @@ $blue: #1f8de2;
 $green: #1fe27b;
 $red: #e21f3f;
 
+$facebook: #3B5998;
+$twitter: #1DA1F2;
+$orange: #FF4F29;
+$teal: #3DBCCF; 
+$teal-dark: #137B8B;
+$background: #FBF9F6;
+$black: #444444;
+$text: #5B5454;
+$borders: #CCCCCC;
+
+// width
+$max-width: 980px;
+
 // spacing
 $full-space: 40px;
 $half-space: 20px;
@@ -17,3 +30,19 @@ $font-size--sm: 12px;
 $font-size--md: 16px;
 $font-size--lg: 24px;
 $font-size--xl: 32px;
+
+
+.stripes {
+  background: repeating-linear-gradient(135deg, 
+    $teal, $teal .33em, 
+    $orange 0, $orange .66em,
+    $background 0, $background 1em
+  );
+}
+
+@mixin bg-img($url, $size) {
+  background-image: url("/images/#{$url}.png");
+  background-size: $size;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+}

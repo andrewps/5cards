@@ -1,9 +1,12 @@
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $text;
 }
 
 .heading {
-  margin-bottom: 0.618em;
+  margin-bottom: 2em;
 
   &.-large {
     font-size: $font-size--lg;
@@ -39,4 +42,28 @@ h2 {
 
 h3 {
   @extend .heading.-small;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: $serif;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: normal;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 0 1.5rem 0;
 }

@@ -1,4 +1,38 @@
+$header: 80px;
+
 header {
-  height: 50px;
-  background: #eeeeee;
+  height: $header;
+  background: white;
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    display: block;
+    content: "";
+    @extend .stripes;
+  }
+  .logo a {
+    color: $black;
+    @extend h1;
+    height: $header;
+    line-height: ($header - 10px);
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+    justify-content: space-between;
+    a {
+      display: inline-block;
+      padding: 0 20px;
+      height: $header;
+      line-height: $header;
+      &:hover {
+        background-color: $background;
+      }
+    }
+  }
 }
