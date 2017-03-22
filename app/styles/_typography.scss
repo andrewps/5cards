@@ -2,6 +2,7 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: $sans;
   color: $text;
 }
 
@@ -46,13 +47,13 @@ h3 {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: $serif;
+  font-family: $display;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: normal;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 h2 {
@@ -66,4 +67,17 @@ p.lead {
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 0 0 1.5rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

@@ -54,6 +54,9 @@
     z-index: 0;
   }
   .card-meta {
+    font-family: $sans;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: white;
     padding: 20px;
     position: absolute;

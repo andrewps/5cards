@@ -1,5 +1,61 @@
-$serif: "Argent";
-$mono: "InputMonoNarrow";
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Martel:400,600,700,800,900|Merriweather:400,400i,700,700i,900,900i|Space+Mono:400,400i,700,700i');
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,300i|Fira+Sans:300,300i');
+
+
+// font-family: 'Space Mono', monospace;
+// font-family: 'Fira Mono', monospace;
+// font-family: 'Fira Sans Condensed', sans-serif;
+// font-family: 'Fira Sans', sans-serif;
+// font-family: 'Martel', serif;
+// font-family: 'Merriweather', serif;
+
+
+$display: 'Austin', sans-serif;
+$sans: "Fira Sans";
+$serif: "Merriweather";
+$mono: "Fira Mono";
+
+
+// @font-face {
+//   font-family: "Austin";
+//   font-style: normal;
+//   font-weight: normal;
+//   src: url('/fonts/austin/Austin-Bold.woff') format('woff'),
+//        url("/fonts/austin/Austin-Bold.otf") format("opentype");
+// }
+
+@font-face {
+  font-family: "Austin";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/austin/Austin-Roman.woff') format('woff'),
+       url("/fonts/austin/Austin-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: "Austin";
+  font-style: italic;
+  font-weight: normal;
+  src: url('/fonts/austin/Austin-RomanItalic.woff') format('woff'),
+       url("/fonts/austin/Austin-RomanItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Austin";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/austin/Austin-Bold.woff') format('woff'),
+       url("/fonts/austin/Austin-Bold.otf") format("opentype");
+} 
+@font-face {
+  font-family: "Austin";
+  font-style: italic;
+  font-weight: bold;
+  src: url('/fonts/austin/Austin-BoldItalic.woff') format('woff'),
+       url("/fonts/austin/Austin-BoldItalic.otf") format("opentype");
+}
+
+
+
 
 
 @font-face {

@@ -13,8 +13,15 @@ class WelcomeMessage extends React.Component{
       <div>
         <div className="wrap">
           <div className="cta">
-            <h1>5Cards lets you mail real post cards to US reps to demand action on issues that you care about.</h1>
-            <a href="#">Read More →</a>
+            <div className="row middle-xs">
+              <div className="col-sm-9">
+                <p className="caps">Welcome</p>
+                <h2>5Cards lets you mail real post cards to US reps to demand action on issues that you care about.</h2>
+              </div>
+              <div className="col-sm-3 text-right">
+                <a className="btn btn-teal" href="#">Read More →</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
