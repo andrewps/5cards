@@ -9,6 +9,7 @@ import HomePage                    from './pages/HomePage';
 import SearchPage                  from './pages/SearchPage';
 import NotFoundPage                from './pages/NotFoundPage';
 import BuildCard                   from './pages/BuildCard';
+import ChooseReps                  from './pages/ChooseReps';
 import ConfirmationPage            from './pages/ConfirmationPage';
 
 export default (
@@ -20,6 +21,7 @@ export default (
       <Route path="/" component={HomePage} />
       <Route path="/search" component={SearchPage} />
       <Route path="/build-card" component={BuildCard} />
+      <Route path="/choose-reps" component={ChooseReps} />
       <Route path="/confirmation" component={ConfirmationPage} />
       <Route path="*" component={NotFoundPage} />
 

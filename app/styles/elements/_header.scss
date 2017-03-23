@@ -18,6 +18,7 @@ header {
   .logo a {
     color: $black;
     @extend h1;
+    font-size: 2rem; 
     height: $header;
     line-height: ($header - 10px);
   }

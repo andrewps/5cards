@@ -17,8 +17,8 @@ gulp.task('sass', function() {
       sourceComments: global.isProd ? false : 'map',
       outputStyle: global.isProd ? 'compressed' : 'nested'
     }))
-    .on('error', handleErrors)
-    .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'))
+    .on('error', handleErrors)    
+    .pipe(autoprefixer(['not ie <= 9', 'iOS > 6', 'Safari > 2']))    
     .pipe(gulpif(!global.isProd, sourcemaps.write('.')))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));

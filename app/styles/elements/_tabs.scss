@@ -1,0 +1,56 @@
+.reps-tabs {
+  background: white;
+  border: 1px solid $borders;
+}
+
+.react-tabs {
+  [role=tablist] {
+    border: none;
+    box-shadow: inset 0 -2px 0px 0px $borders;
+    margin: 0;
+    padding: 0;
+  }
+  [role=tab] {
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid $borders;
+    bottom: 0;
+    position: relative;
+    list-style: none;
+    padding: 20px 20px;
+    cursor: pointer;
+  }
+
+  [role=tab][aria-selected=true],
+  [role=tab]:focus,
+  [role=tab][aria-selected=true]:focus,
+  [role=tab][aria-selected=true]:active {
+    background: none;
+    border-color: $teal;
+    color: $teal;
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  [role=tab][aria-selected=true]:focus:after {
+    display: none !important;
+  }
+
+  [role=tabpanel] {
+    padding: 1rem;
+    overflow: scroll;
+    position: relative;
+    height: 500px;
+  }
+}
+
+.rep-row {
+  border-bottom: 1px solid $borders;
+}
+.face {
+  img {
+    width: 100%; 
+    border-radius: 100%; 
+  }
+}

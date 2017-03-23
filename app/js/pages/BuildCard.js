@@ -77,7 +77,7 @@ class BuildCard extends React.Component {
 
             <div className="next-steps text-center">
               <h2>Next, choose who you will send this card to.</h2>
-              <Link to="/confirmation" className="btn btn-lg btn-teal">Select This Card</Link>
+              <Link to="/choose-reps" className="btn btn-lg btn-teal">Select This Card</Link>
             </div>
           </div>
 
