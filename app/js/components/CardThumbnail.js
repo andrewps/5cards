@@ -7,9 +7,9 @@ class WelcomeMessage extends React.Component{
   render() {
     return (
       <div>
-        <Link className="pick-card" to="/build-card">
+        <Link className="pick-card" to={"/c/" + this.props.slug}>
           <div className="card-meta">
-            <label>Jeff Sessions Resignation</label>
+            <label>{this.props.title}</label>
             <small>25 Cards Sent</small>
           </div>
           <div className="card-overlay"></div>

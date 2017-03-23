@@ -1,15 +1,13 @@
 'use strict';
 
-import React                       from 'react';
-import {Link}                      from 'react-router';
-import DocumentTitle               from 'react-document-title';
-import BuildCard                   from './BuildCard';
-import CardThumbnail               from '../components/CardThumbnail';
-import WelcomeMessage              from '../components/WelcomeMessage';
-
-const propTypes = {
-  currentUser: React.PropTypes.object
-};
+import React            from 'react';
+import Reflux           from 'reflux';
+import {Link}           from 'react-router';
+import DocumentTitle    from 'react-document-title';
+import BuildCard        from './BuildCard';
+import CardThumbnail    from '../components/CardThumbnail';
+import WelcomeMessage   from '../components/WelcomeMessage';
+import HomePageStore    from '../stores/HomePageStore';
 
 class HomePage extends React.Component {
 
@@ -20,6 +18,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <DocumentTitle title="Home">
+
         <section className="home">
 
           <div className="pagebreak--light">
@@ -29,56 +28,16 @@ class HomePage extends React.Component {
           <div className="wrap">
             <div className="row">
               <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
-              </div>
-              <div className="col-sm-4">
-                <CardThumbnail/>
+                <CardThumbnail title="Jackson Sux" slug="jackson-sux"/>
               </div>
             </div>
           </div>
+
         </section>
       </DocumentTitle>
     );
   }
 
 }
-
-HomePage.propTypes = propTypes;
 
 export default HomePage;

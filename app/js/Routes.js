@@ -17,9 +17,10 @@ export default (
 
       <IndexRoute component={HomePage} />
 
+
       <Route path="/" component={HomePage} />
+      <Route path="/c/:slug" component={BuildCard} />
       <Route path="/search" component={SearchPage} />
-      <Route path="/build-card" component={BuildCard} />
       <Route path="/confirmation" component={ConfirmationPage} />
       <Route path="*" component={NotFoundPage} />
 
