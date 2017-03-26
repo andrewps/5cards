@@ -13,11 +13,11 @@ class SearchReps extends React.Component{
       <div>
         <form className="form">
           <div className="row">
-            <div className="col-xs-8">
+            <div className="col-xs-9">
               <input type="text" className="form-control"/> 
             </div>
-            <div className="col-xs-4">
-              <button className="btn btn-teal">Search</button>
+            <div className="col-xs-3">
+              <button className="btn btn-block btn-teal">Search</button>
             </div>
           </div>
         </form>

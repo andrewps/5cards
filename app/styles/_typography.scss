@@ -6,47 +6,10 @@ p {
   color: $text;
 }
 
-.heading {
-  margin-bottom: 2em;
-
-  &.-large {
-    font-size: $font-size--lg;
-    font-weight: bold;
-    line-height: $half-space * 3 / 2;
-  }
-
-  &.-medium {
-    font-size: $font-size--md;
-    font-weight: normal;
-    line-height: $half-space;
-  }
-
-  &.-small {
-    font-size: $font-size--sm;
-    font-weight: bold;
-    line-height: $half-space * 2 / 3;
-  }
-
-  &.-smallest {
-    font-size: $font-size--xs;
-    font-weight: bold;
-  }
-}
-
-h1 {
-  @extend .heading.-large;
-}
-
-h2 {
-  @extend .heading.-medium;
-}
-
-h3 {
-  @extend .heading.-small;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  line-height: normal;
+  font-weight: normal;
   font-family: $display;
 }
 
@@ -57,10 +20,13 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
-  line-height: normal;
-  font-weight: normal;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 p.lead {

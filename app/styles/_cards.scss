@@ -90,3 +90,12 @@
     }
   }
 }
+
+form#writeMessage {
+  textarea {
+    min-height: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

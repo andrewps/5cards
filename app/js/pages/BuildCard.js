@@ -6,11 +6,33 @@ import DocumentTitle               from 'react-document-title';
 import IssueHeader                 from '../components/IssueHeader';
 import FlipCard                    from 'react-flipcard';
 
+var  max_chars = 160;
+
+
 class BuildCard extends React.Component {
 
+  // Character Count
+
+  // getInitialState: function() {
+  //   return {
+  //       chars_left: max_chars
+  //     };
+  // },
+  handleChange(event) {
+    var input = event.target.value;
+    this.setState({
+      chars_left: max_chars - input.length
+    });
+  }
+
+
+  // Flip Card
   constructor(props) {
     super(props)
-    this.state = { isFlipped: false }
+    this.state = { 
+      isFlipped: false,
+      chars_left: max_chars
+    }
   }
   showBack() {
     this.setState({
@@ -54,10 +76,14 @@ class BuildCard extends React.Component {
                 <div className="btn btn-black btn-flip-card" type="button" onClick={this.showBack.bind(this)}>Flip Card</div>
                   <div className="row">
                     <div className="col-sm-8">
-                      <form className="form">
+                      <form id="writeMessage" className="form">
                         <p>Type your message here</p>
+                        <p>Characters Left: {this.state.chars_left}</p>
                         <div className="form-group">
-                          <textarea className="form-control"></textarea>
+                          <textarea 
+                            onChange={this.handleChange.bind(this)}
+                            className="form-control" 
+                          />
                         </div>
                         <div className="form-group">
                           <label>Sincerly,</label>
