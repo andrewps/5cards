@@ -7,7 +7,7 @@ import IssueHeader                 from '../components/IssueHeader';
 import FlipCard                    from 'react-flipcard';
 
 class BuildCard extends React.Component {
-  
+
   constructor(props) {
     super(props)
     this.state = { isFlipped: false }
@@ -32,18 +32,18 @@ class BuildCard extends React.Component {
       this.showFront();
     }
   }
-  
+
   render() {
     return (
       <DocumentTitle title="Build Card">
         <section className="build-card">
 
           <div className="wrap">
-            
-            <IssueHeader></IssueHeader>
-            
+
+            <IssueHeader value={this.props.routeParams.slug}></IssueHeader>
+
             <hr/>
-            
+
             <FlipCard
               disabled={true}
               flipped={this.state.isFlipped}
@@ -51,7 +51,7 @@ class BuildCard extends React.Component {
               onKeyDown={this.handleKeyDown}
             >
               <div className="card-front">
-                <div className="btn btn-black btn-flip-card" type="button" onClick={this.showBack.bind(this)}>Flip Card</div>                
+                <div className="btn btn-black btn-flip-card" type="button" onClick={this.showBack.bind(this)}>Flip Card</div>
                   <div className="row">
                     <div className="col-sm-8">
                       <form className="form">
@@ -73,7 +73,7 @@ class BuildCard extends React.Component {
               <div className="card-back">
                 <div className="btn btn-black btn-flip-card" type="button" ref="backButton" onClick={this.showFront.bind(this)}>Flip Card</div>
               </div>
-            </FlipCard>            
+            </FlipCard>
 
             <div className="next-steps text-center">
               <h2>Next, choose who you will send this card to.</h2>
