@@ -66,8 +66,8 @@ class ChooseReps extends React.Component {
           </div>
 
           <div className="next-steps text-center">
-            <h2>Next, finalize payment and send cards.</h2>
-            <Link to="/confirmation" className="btn btn-lg btn-teal">Finalize & Send Cards</Link>
+            <h3>Next, finalize payment and send cards.</h3>
+            <Link to="/confirmation" className="btn btn-lg btn-salmon">Finalize & Send Cards</Link>
           </div>
 
         </section>

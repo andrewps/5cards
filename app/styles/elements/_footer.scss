@@ -1,4 +1,7 @@
 footer {
+  background: $black;
+  color: $text-inverted;
+  margin-top: 4rem;
   padding: 40px 0;
 }
 
@@ -8,7 +11,13 @@ ul.footer-links {
   list-style: none;
   li {
     margin: 1rem 0;
-    a {}
+    a {
+      font-family: $sans;
+      font-size: .75rem;
+      font-weight: bold;
+      @extend .caps;
+      @extend .inverted;
+    }
   }
 }
 
@@ -26,4 +35,10 @@ ul.footer-links {
     color: $teal;
     
   }
+}
+
+.copyright {
+  border-top: 1px solid lighten($black, 5%);
+  margin-top: 2rem;
+  padding: 1rem 0; 
 }

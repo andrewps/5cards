@@ -16,7 +16,7 @@ class Header extends React.Component {
             <Link to="/">5Cards</Link>
           </div>
           <nav>
-            <Link to="/">Donate</Link>
+            <Link to="/donate">Donate</Link>
             <Link to="/">What is this?</Link>
             {/* <Link to="/search">Search</Link> */}
           </nav>

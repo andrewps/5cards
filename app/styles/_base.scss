@@ -23,6 +23,16 @@ a {
   &:hover {
     lighten: $teal-dark(5%);
   }
+  &.inverted {
+    color: $background;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
 }
 
 hr {

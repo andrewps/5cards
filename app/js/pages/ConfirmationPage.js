@@ -20,9 +20,13 @@ class ConfirmationPage extends React.Component {
                 <p className="lead">Your postcards have been sent!</p>
               </div>
               <div className="col-xs-4">
-                <div className="row between-xs">
-                  <a href="#" className="btn btn-facebook">Share on Facebook</a>
-                  <a href="#" className="btn btn-twitter">Share on Twitter</a>
+                <div className="row end-xs">
+                  <div className="col-sm-6">
+                    <a href="#" className="btn btn-sm btn-block btn-facebook">Share on Facebook</a>
+                  </div>
+                  <div className="col-sm-6">
+                    <a href="#" className="btn btn-sm btn-block btn-twitter">Share on Twitter</a>
+                  </div>
                 </div>
               </div>
             </div>

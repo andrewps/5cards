@@ -77,8 +77,14 @@ class BuildCard extends React.Component {
                   <div className="row">
                     <div className="col-sm-8">
                       <form id="writeMessage" className="form">
-                        <p>Type your message here</p>
-                        <p>Characters Left: {this.state.chars_left}</p>
+                        <div className="row">
+                          <div className="col-sm-6">
+                            <label>Type your message here</label>
+                          </div>
+                          <div className="col-sm-6 end-xs">
+                            <small>Characters Left: {this.state.chars_left}</small>
+                          </div>
+                        </div>
                         <div className="form-group">
                           <textarea 
                             onChange={this.handleChange.bind(this)}
@@ -92,7 +98,7 @@ class BuildCard extends React.Component {
                       </form>
                     </div>
                     <div className="col-sm-4">
-                      stamp
+                      <div className="stamp-area"></div>
                     </div>
                 </div>
               </div>
@@ -102,8 +108,8 @@ class BuildCard extends React.Component {
             </FlipCard>
 
             <div className="next-steps text-center">
-              <h2>Next, choose who you will send this card to.</h2>
-              <Link to="/choose-reps" className="btn btn-lg btn-teal">Select This Card</Link>
+              <h3>Next, choose who you will send this card to.</h3>
+              <Link to="/choose-reps" className="btn btn-lg btn-salmon">Select This Card</Link>
             </div>
           </div>
 

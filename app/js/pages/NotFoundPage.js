@@ -1,7 +1,7 @@
 'use strict';
 
-import React         from 'react';
-import DocumentTitle from 'react-document-title';
+import React                       from 'react';
+import DocumentTitle               from 'react-document-title';
 
 const propTypes = {
   currentUser: React.PropTypes.object

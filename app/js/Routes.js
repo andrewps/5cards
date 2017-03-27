@@ -11,6 +11,7 @@ import NotFoundPage                from './pages/NotFoundPage';
 import BuildCard                   from './pages/BuildCard';
 import ChooseReps                  from './pages/ChooseReps';
 import ConfirmationPage            from './pages/ConfirmationPage';
+import DonatePage                  from './pages/DonatePage';
 
 export default (
   <Router history={CreateBrowserHistory()}>
@@ -24,6 +25,7 @@ export default (
       <Route path="/search" component={SearchPage} />
       <Route path="/choose-reps" component={ChooseReps} />
       <Route path="/confirmation" component={ConfirmationPage} />
+      <Route path="/donate" component={DonatePage} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>
